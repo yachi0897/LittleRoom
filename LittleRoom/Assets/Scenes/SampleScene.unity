@@ -2313,7 +2313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6569713f9481b094a8f6fcc7fb7347db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataDialogue: {fileID: 0}
+  dataDialogue: {fileID: 11400000, guid: 852280095a8d7d242ba189b2c8df5f8d, type: 2}
   onDialogueFinish:
     m_PersistentCalls:
       m_Calls: []
