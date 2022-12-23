@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9968e91fff273e4dbfceef534c9c73e, type: 3}
+  m_Name: Mattress
+  m_EditorClassIdentifier: 
+  dialogueName: "\u67D0\u4F4D\u5B78\u751F"
+  dialogueContents:
+  - "\u4E0D\u53EF\u4EE5\u7761\u56DE\u7C60\u89BA..."
