@@ -1617,6 +1617,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &584648933
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2263,6 +2266,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &810130661
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2319,6 +2325,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &871371653
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2626,6 +2635,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &1037296264
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2956,6 +2968,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!65 &1133959095
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3230,6 +3245,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &1200495990
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3913,6 +3931,115 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4257855949557809107, guid: 8410f22400836a04e872ecaf77da2374, type: 3}
   m_PrefabInstance: {fileID: 1398735869}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1407563854 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 4a77092d7c96a954ca686ea7bc9e3491, type: 3}
+  m_PrefabInstance: {fileID: 131516277}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1407563855
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407563854}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4fa7c9c7498833d48b65cb969a7f8be6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!64 &1407563856
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407563854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -309564341807801241, guid: 4a77092d7c96a954ca686ea7bc9e3491, type: 3}
+--- !u!65 &1407563857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407563854}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07869663, y: 0.046824306, z: 0.013058051}
+  m_Center: {x: 0.031216927, y: 0.012065769, z: 0.000027399039}
+--- !u!114 &1407563858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1407563854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6569713f9481b094a8f6fcc7fb7347db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataDialogue: {fileID: 11400000, guid: 2b16825cc66b5ff488da7682f75b14dd, type: 2}
+  onDialogueFinish:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1407563855}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1407563857}
+        m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 435068354}
+        m_TargetAssemblyTypeName: FOX.DialogueSystem, Assembly-CSharp
+        m_MethodName: StartDialogue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 2c310e519654be14894722cb666be9c2, type: 2}
+          m_ObjectArgumentAssemblyTypeName: FOX.DialogueData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  propActive: {fileID: 0}
+  dataDialogueActive: {fileID: 11400000, guid: 2c310e519654be14894722cb666be9c2, type: 2}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1461548997 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 458ca01a387b8bc4da3c4a662b63ff49, type: 3}
@@ -3936,6 +4063,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &1461549002
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -4798,6 +4928,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1758546163 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 683869c6c8d33d543b764a7017f17123, type: 3}
@@ -4839,6 +4972,9 @@ MonoBehaviour:
       m_Calls: []
   propActive: {fileID: 0}
   dataDialogueActive: {fileID: 0}
+  onDialogueFinishAfterActive:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!64 &1758546171
 MeshCollider:
   m_ObjectHideFlags: 0

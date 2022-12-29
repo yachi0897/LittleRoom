@@ -52,6 +52,10 @@ namespace FOX
 
         }
         #endregion
+        public void StartDialogue(DialogueData data)
+        {
+            StartDialogue(data, null);
+        }
         public void StartDialogue(DialogueData data,UnityEvent _onDialogueFinish=null)
         {
             playerInput.enabled = false;
